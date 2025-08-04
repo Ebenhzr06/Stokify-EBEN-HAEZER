@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('sku')->unique();
             $table->text('description')->nullable('');
-            $table->decimal('purchase_price');
-            $table->decimal('selling_price');
+            $table->decimal('purchase_price',15,0);
+            $table->decimal('selling_price',15,0);
             $table->string('image')->nullable();
             $table->bigInteger('minimum_stock');
             $table->timestamps();
