@@ -50,7 +50,7 @@ class CategoryController extends Controller
             );
         }
 
-        return redirect()->route('category')->with('success', 'Kategori berhasil ditambahkan!');
+        return redirect()->route('Admin.category.index')->with('success', 'Kategori berhasil ditambahkan!');
     }
 
     public function edit($id)
