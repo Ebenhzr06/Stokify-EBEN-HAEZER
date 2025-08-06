@@ -48,6 +48,12 @@
                 {{ session('success') }}
             </div>
         @endif
+        @if (session('error'))
+            <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"
+                role="alert">
+                {{ session('error') }}
+            </div>
+        @endif
 
         <div class="mb-4 flex items-center space-x-4">
             <form action="{{ route('product.import') }}" method="POST" enctype="multipart/form-data"
