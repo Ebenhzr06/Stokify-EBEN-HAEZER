@@ -89,6 +89,11 @@ class ProductController extends Controller
 
     public function update($id, Request $request)
     {
+        $hasTransactions = \App\Models\StockTransaction::where('product_id', $id)->exists();
+
+        if ($hasTransactions) {
+            return redirect()->route('Admin.product.index')->with('error', 'Produk tidak dapat diubah karena sudah memiliki riwayat transaksi.');
+        }
         $validated = $request->validate([
             'name' => 'required',
             'category_id' => 'required',
@@ -129,6 +134,12 @@ class ProductController extends Controller
 
     public function hapus($id)
     {
+
+        $hasTransactions = \App\Models\StockTransaction::where('product_id', $id)->exists();
+
+        if ($hasTransactions) {
+            return redirect()->route('Admin.product.index')->with('error', 'Produk tidak dapat dihapus karena sudah memiliki riwayat transaksi.');
+        }
         // Ambil produk sebelum dihapus untuk mendapatkan namanya
         $productToDelete = $this->productService->getProductById($id);
         $productName = $productToDelete ? $productToDelete->name : 'Tidak Dikenal';
