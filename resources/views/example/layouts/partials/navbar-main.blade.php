@@ -23,7 +23,7 @@
 </a>
 
         <div class="hidden sm:flex sm:ml-6">
-          <ul class="flex space-x-8">
+<!--           <ul class="flex space-x-8">
             <li>
               <a href="#"
                 class="text-sm font-medium text-gray-700 hover:text-primary-700 dark:text-gray-400 dark:hover:text-primary-500"
@@ -44,12 +44,12 @@
                 class="text-sm font-medium text-gray-700 hover:text-primary-700 dark:text-gray-400 dark:hover:text-primary-500"
                 aria-current="page">Contact</a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
 
       <div>
-        <a href="#"
+<!--         <a href="#"
           class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
           <svg class="w-5 h-5 mr-2 -ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +57,7 @@
               d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
           </svg>
           Login/Register
-        </a>
+        </a> -->
         <button data-collapse-toggle="mobile-menu" type="button"
           class="inline-flex items-center justify-center p-2 ml-3 text-gray-400 rounded-lg sm:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-300 dark:hover:bg-gray-700 dark:hover:text-white"
           aria-controls="mobile-menu-2" aria-expanded="false">
